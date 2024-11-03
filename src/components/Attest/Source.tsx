@@ -12,6 +12,7 @@ import {
   selectAttestIsSourceComplete,
   selectAttestShouldLockFields,
   selectAttestSourceChain,
+  selectAttestSourceAsset,
   selectAttestMessageContent, // Import the new selector
 } from "../../store/selectors";
 import { CHAINS } from "../../utils/consts";

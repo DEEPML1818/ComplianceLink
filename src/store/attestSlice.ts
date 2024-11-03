@@ -20,6 +20,7 @@ export interface AttestState {
   isSending: boolean;
   isCreating: boolean;
   createTx: Transaction | undefined;
+  messageContent: string; // Add this line for message content
 }
 
 const initialState: AttestState = {
@@ -32,6 +33,7 @@ const initialState: AttestState = {
   isSending: false,
   isCreating: false,
   createTx: undefined,
+  messageContent: "", // Initialize message content
 };
 
 export const attestSlice = createSlice({
@@ -85,6 +87,9 @@ export const attestSlice = createSlice({
       state.createTx = action.payload;
       state.isCreating = false;
     },
+    setMessageContent: (state, action: PayloadAction<string>) => { // Add this reducer
+      state.messageContent = action.payload;
+    },
     reset: (state) => ({
       ...initialState,
       sourceChain: state.sourceChain,
@@ -105,6 +110,7 @@ export const {
   setIsSending,
   setIsCreating,
   setCreateTx,
+  setMessageContent, // Ensure this is exported
   reset,
 } = attestSlice.actions;
 

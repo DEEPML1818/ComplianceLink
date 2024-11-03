@@ -59,7 +59,18 @@ function Send() {
   const attestTx = useSelector(selectAttestAttestTx);
   const isSendComplete = useSelector(selectAttestIsSendComplete);
   const { isReady, statusMessage } = useIsWalletReady(sourceChain);
+  const sourceAsset = useSelector(selectAttestSourceAsset);
 
+  // Debug logs
+  console.log("Wallet ready status:", isReady, "Status message:", statusMessage);
+  console.log("Source Asset:", sourceAsset);
+  console.log("Attestation Transaction:", attestTx);
+
+  const handleClickWithLog = () => {
+    console.log("Attest button clicked");
+    handleClick();
+  };
+  
   return (
     <>
       <KeyAndBalance chainId={sourceChain} />

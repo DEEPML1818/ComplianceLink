@@ -30,7 +30,6 @@ export const selectAttestIsCreating = (state: RootState) =>
 export const selectAttestCreateTx = (state: RootState) => state.attest.createTx;
 export const selectAttestIsSourceComplete = (state: RootState) =>
   !!state.attest.sourceChain && !!state.attest.sourceAsset;
-// TODO: check wrapped asset exists or is native attest
 export const selectAttestIsTargetComplete = (state: RootState) =>
   selectAttestIsSourceComplete(state) && !!state.attest.targetChain;
 export const selectAttestIsSendComplete = (state: RootState) =>
@@ -39,6 +38,10 @@ export const selectAttestIsCreateComplete = (state: RootState) =>
   !!selectAttestCreateTx(state);
 export const selectAttestShouldLockFields = (state: RootState) =>
   selectAttestIsSending(state) || selectAttestIsSendComplete(state);
+
+// Selector for messageContent
+export const selectAttestMessageContent = (state: RootState) =>
+  state.attest.messageContent; // Add this line
 
 /*
  * NFT
