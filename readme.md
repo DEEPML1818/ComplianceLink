@@ -95,14 +95,14 @@ DCE operates on a modular architecture comprising the following main components:
 
 ## Usage
 ### Compliance Checks
-1. User KYC Submission: Users submit their KYC information via a frontend application that interacts with the DCE API.
-2. Compliance API Interaction: The DCE backend sends KYC data to Circle’s Compliance API for validation.
-3. Status Recording: Compliance statuses are stored in the on-chain Identity Verification Contract for future reference.
+1. **User KYC Submission**: Users submit their KYC information via a frontend application that interacts with the DCE API.
+2. **Compliance API Interaction**: The DCE backend sends KYC data to Circle’s Compliance API for validation.
+3. **Status Recording**: Compliance statuses are stored in the on-chain Identity Verification Contract for future reference.
 
 ### Cross-Chain Enforcement
-1. Transaction Request: Users initiate transactions, triggering compliance checks.
-2. Smart Contract Enforcement: Smart contracts validate user compliance before allowing the transaction to proceed.
-3. Wormhole Protocol for Cross-Chain: Compliance status is synchronized across chains to ensure regulatory adherence.
+1. **Transaction Request**: Users initiate transactions, triggering compliance checks.
+2. **Smart Contract Enforcement**: Smart contracts validate user compliance before allowing the transaction to proceed.
+3. **Wormhole Protocol for Cross-Chain**: Compliance status is synchronized across chains to ensure regulatory adherence.
 
 ## Smart Contracts
 ### Identity Verification Contract
