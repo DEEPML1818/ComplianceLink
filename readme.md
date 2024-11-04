@@ -25,6 +25,12 @@ The Decentralized Compliance Engine (DCE) is designed to address regulatory and 
 
 The **ComplianceLink Prototype** is a preliminary version of our Decentralized Compliance Engine (DCE), allowing developers and stakeholders to explore the core functionalities, user interactions, and backend architecture that drive our solution. The prototype demonstrates key features, including user KYC submission, compliance checks, and cross-chain status updates. 
 
+### Deployed Contracts on Testnet/Devnet
+
+1. **Solana Token Contract**  
+   - For using token string function to save compliance data
+   - Contract Address : 
+
 ### Video Demo and Site Link
 
 For a walkthrough of ComplianceLink in action, check out our [Demo Video](https://youtu.be/Re01oAZEXiY) showcasing user interactions, compliance checks, and cross-chain synchronization. 
