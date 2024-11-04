@@ -1,8 +1,9 @@
 import { CHAIN_ID_SOLANA, isTerraChain } from "@certusone/wormhole-sdk";
 import { Alert } from "@material-ui/lab";
-import { Link, makeStyles } from "@material-ui/core";
+import { Link, makeStyles, Button } from "@material-ui/core";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
+import { ethers } from "ethers"; // Import ethers.js for Ethereum interaction
 import { useHandleAttest } from "../../hooks/useHandleAttest";
 import useIsWalletReady from "../../hooks/useIsWalletReady";
 import useMetaplexData from "../../hooks/useMetaplexData";
@@ -11,6 +12,7 @@ import {
   selectAttestIsSendComplete,
   selectAttestSourceAsset,
   selectAttestSourceChain,
+  selectAttestMessageContent, // Selector to get Circle data from Redux
 } from "../../store/selectors";
 import ButtonWithLoader from "../ButtonWithLoader";
 import KeyAndBalance from "../KeyAndBalance";
@@ -18,6 +20,7 @@ import TransactionProgress from "../TransactionProgress";
 import WaitingForWalletMessage from "./WaitingForWalletMessage";
 import { SOLANA_TOKEN_METADATA_PROGRAM_URL } from "../../utils/consts";
 import TerraFeeDenomPicker from "../TerraFeeDenomPicker";
+import { ExternalProvider } from "@ethersproject/providers";
 
 const useStyles = makeStyles((theme) => ({
   alert: {
@@ -60,17 +63,37 @@ function Send() {
   const isSendComplete = useSelector(selectAttestIsSendComplete);
   const { isReady, statusMessage } = useIsWalletReady(sourceChain);
   const sourceAsset = useSelector(selectAttestSourceAsset);
+  const circleData = useSelector(selectAttestMessageContent); // Get Circle data message from Redux
 
-  // Debug logs
-  console.log("Wallet ready status:", isReady, "Status message:", statusMessage);
-  console.log("Source Asset:", sourceAsset);
-  console.log("Attestation Transaction:", attestTx);
-
-  const handleClickWithLog = () => {
-    console.log("Attest button clicked");
-    handleClick();
-  };
+  // Function to send Circle data to Ethereum
+const handleSendToEthereum = async () => {
+  if (!circleData) {
+    return console.error("No message content to send.");
+  }
   
+  if (!window.ethereum) {
+    console.error("Ethereum provider not found.");
+    return;
+  }
+  
+  const provider = new ethers.providers.Web3Provider(window.ethereum as ExternalProvider);
+  const signer = provider.getSigner();
+  const contractAddress = "YOUR_CONTRACT_ADDRESS"; // Replace with your Ethereum contract address
+  const abi = [
+    "function storeData(string memory _data) public",
+  ]; // Smart contract ABI
+  const contract = new ethers.Contract(contractAddress, abi, signer);
+  
+  try {
+    const tx = await contract.storeData(JSON.stringify(circleData)); // Send data as a stringified JSON
+    await tx.wait();
+    console.log("Data sent to Ethereum:", tx);
+  } catch (error) {
+    console.error("Ethereum send error:", error);
+  }
+};
+
+
   return (
     <>
       <KeyAndBalance chainId={sourceChain} />
@@ -92,6 +115,16 @@ function Send() {
         tx={attestTx}
         isSendComplete={isSendComplete}
       />
+
+      {/* New button to send data to Ethereum */}
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={handleSendToEthereum}
+        disabled={!circleData}
+      >
+        Send Data to Ethereum
+      </Button>
     </>
   );
 }

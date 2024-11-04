@@ -347,6 +347,8 @@ async function near(
   }
 }
 
+console.log("Hello1")
+
 async function solana(
   dispatch: any,
   enqueueSnackbar: any,
@@ -356,23 +358,31 @@ async function solana(
 ) {
   dispatch(setIsSending(true));
   try {
+    console.log("Hello1")
     const connection = new Connection(SOLANA_HOST, "confirmed");
+    console.log("Hello1")
+    console.log(SOL_BRIDGE_ADDRESS , SOL_BRIDGE_ADDRESS , solPK , wallet , connection )
     const transaction = await attestFromSolana(
       connection,
       SOL_BRIDGE_ADDRESS,
-      SOL_TOKEN_BRIDGE_ADDRESS,
-      solPK.toString(),
-      sourceAsset
+      SOL_BRIDGE_ADDRESS,
+      solPK,
+      solPK,
+      "finalized" // Optional, but sets the commitment level
     );
+    console.log("Hello1")
     const txid = await signSendAndConfirm(wallet, connection, transaction);
+    console.log("Hello1")
     enqueueSnackbar(null, {
       content: <Alert severity="success">Transaction confirmed</Alert>,
     });
+    console.log("Hello1")
     const info = await connection.getTransaction(txid);
     if (!info) {
       // TODO: error state
       throw new Error("An error occurred while fetching the transaction info");
     }
+    console.log("Hello1")
     dispatch(setAttestTx({ id: txid, block: info.slot }));
     const sequence = parseSequenceFromLogSolana(info);
     const emitterAddress = await getEmitterAddressSolana(
