@@ -19,7 +19,7 @@ A powerful, cross-chain compliance solution for decentralized finance (DeFi) app
 
 ## Introduction
 
-The Decentralized Compliance Engine (DCE) is designed to address regulatory and compliance needs within DeFi. It provides a fully decentralized, cross-chain KYC/AML compliance framework that is secure, efficient, and scalable. By integrating with the Circle Compliance API, Wormhole protocol, and deploying smart contracts on multiple blockchains (Ethereum, Solana, and Sui), DCE ensures cross-border regulatory compliance, enabling DeFi applications to meet global standards while remaining decentralized.
+The Decentralized Compliance Engine (DCE) is designed to address regulatory and compliance needs within DeFi. It provides a fully decentralized, cross-chain KYC/AML compliance framework that is secure, efficient, and scalable. By integrating with the Circle Compliance API, Wormhole protocol, and deploying smart contracts on multiple blockchains (Ethereum, Solana, and etc), DCE ensures cross-border regulatory compliance, enabling DeFi applications to meet global standards while remaining decentralized.
 
 ## Prototype - Current Development (Live for Testing)
 
