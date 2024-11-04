@@ -25,6 +25,22 @@ The Decentralized Compliance Engine (DCE) is designed to address regulatory and 
 
 The **ComplianceLink Prototype** is a preliminary version of our Decentralized Compliance Engine (DCE), allowing developers and stakeholders to explore the core functionalities, user interactions, and backend architecture that drive our solution. The prototype demonstrates key features, including user KYC submission, compliance checks, and cross-chain status updates. 
 
+### Video Demo and Site Link
+
+For a walkthrough of ComplianceLink in action, check out our [Demo Video](https://youtu.be/Re01oAZEXiY) showcasing user interactions, compliance checks, and cross-chain synchronization. 
+
+To experience ComplianceLink yourself, visit our [Live Prototype Site](https://compliancelink.onrender.com/), where you can submit KYC information, view compliance statuses, and explore cross-chain transactions.
+
+### Visual Guide
+
+Below are some images to help guide you through using ComplianceLink:
+
+- ![User Registration](#)  
+- ![Compliance Status](#)  
+- ![Cross-Chain Transactions](#)
+
+These visuals offer a glimpse into the user experience, with intuitive interfaces for compliance management and cross-chain operations.
+
 ### Features Demonstrated
 
 1. **KYC and AML Verification Flow**  
