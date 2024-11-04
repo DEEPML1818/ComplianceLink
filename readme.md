@@ -21,8 +21,51 @@ A powerful, cross-chain compliance solution for decentralized finance (DeFi) app
 
 The Decentralized Compliance Engine (DCE) is designed to address regulatory and compliance needs within DeFi. It provides a fully decentralized, cross-chain KYC/AML compliance framework that is secure, efficient, and scalable. By integrating with the Circle Compliance API, Wormhole protocol, and deploying smart contracts on multiple blockchains (Ethereum, Solana, and Sui), DCE ensures cross-border regulatory compliance, enabling DeFi applications to meet global standards while remaining decentralized.
 
-## Prototype
+## Prototype - Current Development (Live for Testing)
 
+The **ComplianceLink Prototype** is a preliminary version of our Decentralized Compliance Engine (DCE), allowing developers and stakeholders to explore the core functionalities, user interactions, and backend architecture that drive our solution. The prototype demonstrates key features, including user KYC submission, compliance checks, and cross-chain status updates. 
+
+### Features Demonstrated
+
+1. **KYC and AML Verification Flow**  
+   Users can submit KYC information through the frontend, which triggers the compliance validation process with Circle’s Compliance API, showcasing automated user verification.
+
+2. **On-Chain Compliance Status Recording**  
+   Compliance statuses are recorded on the Identity Verification Contract, simulating the smart contract enforcement that restricts access based on compliance status.
+
+3. **Cross-Chain Status Synchronization**  
+   Utilizing Wormhole’s interoperability layer, compliance statuses are synchronized across multiple blockchain networks, simulating cross-chain compliance.
+
+### Accessing the Prototype
+
+- **Frontend:** A web-based frontend built using [React] provides a user interface for submitting KYC data, viewing compliance status, and simulating cross-chain transactions.
+- **Backend:** The backend API, built with Node, handles data submission, compliance checks, and interactions with smart contracts deployed on test networks.
+- **Smart Contracts:** Test contracts are deployed on Ethereum and Solana testnets, facilitating user status updates and enforcement.
+
+### How to Run the Prototype
+
+To explore the ComplianceLink prototype:
+
+1. **Clone the Repository:** Clone the project repository and install dependencies.
+   ```bash
+   git clone https://github.com/DEEPML1818/ComplianceLink.git
+   cd ComplianceLink
+3. **Set Environment Variables:** Add Circle API, Wormhole SDK, and other required keys in a `.env` file.
+   ```bash
+   CIRCLE_API_KEY=<Your_Circle_API_Key>
+4. **Start the Backend Server:** Will start automatically when run `npm start` to launch the frontend server.
+5. **Launch the Frontend:** Use `npm start` in the frontend directory to start the interface.
+   ```bash
+   npm start
+6. **Deploy Smart Contracts (Optional):** Use [Hardhat/Truffle] to deploy smart contracts on test networks.
+
+**Note:** The prototype is for demonstration purposes only and may not contain all features or security layers of the full implementation.
+
+## MVP Development (Next Phase - OnGoing development)
+
+The **MVP Development** phase will build upon the ComplianceLink prototype by integrating advanced features and expanding cross-chain compatibility. This phase will focus on refining compliance processes, enhancing backend stability, and ensuring that the KYC/AML verification and cross-chain enforcement mechanisms operate seamlessly in a live environment. Key objectives include implementing real-time compliance monitoring, expanding support for additional blockchain networks, and developing a robust user interface for broader accessibility. This stage is critical to transforming ComplianceLink into a fully operational, decentralized compliance solution capable of supporting the evolving needs of DeFi ecosystems.
+
+**Following after this, is our projected plan for ComplianceLink further developments**
 
 ## Features
 
@@ -71,8 +114,8 @@ DCE operates on a modular architecture comprising the following main components:
 ### Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/dce
-   cd dce
+   git clone https://github.com/DEEPML1818/ComplianceLink.git
+   cd ComplianceLink
 
 2. **Install Dependencies**
    ```bash
@@ -161,4 +204,4 @@ We welcome contributions from the community! Please submit pull requests to the 
 Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
-For questions or partnership inquiries, please contact us at: []
+For questions or partnership inquiries, please contact us at: navinder.tech@gmail.com
