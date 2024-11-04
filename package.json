@@ -64,8 +64,8 @@
     "use-debounce": "^7.0.0"
   },
   "scripts": {
-    "start": "node --max-old-space-size=4098 && react-app-rewired start",
-    "build": "node --max-old-space-size=6144 && react-app-rewired build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
