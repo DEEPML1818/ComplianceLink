@@ -38,6 +38,7 @@ Below are some images to help guide you through using ComplianceLink:
 - ![User Registration](#)  
 - ![Compliance Status](#)  
 - ![Cross-Chain Transactions](#)
+- ![View](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-1.jpeg)
 
 These visuals offer a glimpse into the user experience, with intuitive interfaces for compliance management and cross-chain operations.
 
