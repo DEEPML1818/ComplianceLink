@@ -96,7 +96,7 @@ DCE operates on a modular architecture comprising the following main components:
 - **Backend**: Node.js, Express.js
 - **Blockchain Interactions**:
   - **Ethereum**: Solidity for smart contracts
-  - **Solana/Sui**: Rust for smart contracts
+  - **Solana**: Rust for smart contracts
   - **Wormhole SDK** for cross-chain interactions
 - **Database**: MongoDB/PostgreSQL for off-chain storage, Redis for message queuing
 - **Storage**: IPFS for decentralized KYC document storage
@@ -159,7 +159,7 @@ This contract records KYC statuses for each user’s wallet address. The contrac
 Implements compliance rules and enforces them across transactions. Integrates with Wormhole to propagate compliance status across blockchains.
 
 ### Deployment
-Smart contracts can be deployed on Ethereum, Solana, and Sui using Solidity and Rust, respectively.
+Smart contracts can be deployed on Ethereum and Solana using Solidity and Rust, respectively.
 
 ## API Documentation
 ### Endpoints
