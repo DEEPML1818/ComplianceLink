@@ -73,6 +73,8 @@ To explore the ComplianceLink prototype:
    ```bash
    git clone https://github.com/DEEPML1818/ComplianceLink.git
    cd ComplianceLink
+2. **Install Dependencies**
+   ```bash
    nvm install 16.20.0 && nvm use 16.20.0
    npm ci or npm i 
 3. **Set Environment Variables:** Add Circle API, Wormhole SDK, and other required keys in a `.env` file.
