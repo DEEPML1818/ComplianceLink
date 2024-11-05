@@ -142,7 +142,8 @@ DCE operates on a modular architecture comprising the following main components:
 
 2. **Install Dependencies**
    ```bash
-   npm install
+   nvm install 16.20.0 && nvm use 16.20.0
+   npm ci or npm i 
 
 3. **Set Up Environment Variables**
    - Create a .env file in the root directory with the following keys :
