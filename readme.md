@@ -34,7 +34,7 @@ The **ComplianceLink Prototype** is a preliminary version of our Decentralized C
 
 ### Video Demo and Site Link
 
-For a walkthrough of ComplianceLink in action, check out our [Demo Video](https://youtu.be/Re01oAZEXiY) showcasing user interactions, compliance checks, and cross-chain synchronization. 
+For a walkthrough of ComplianceLink in action, check out our [Demo Video](https://youtu.be/rOlfXGCI_6M) showcasing user interactions, compliance checks, and cross-chain synchronization. 
 
 To experience ComplianceLink yourself, visit our [Live Prototype Site](https://compliancelink.onrender.com/), where you can submit KYC information, view compliance statuses, and explore cross-chain transactions.
 
