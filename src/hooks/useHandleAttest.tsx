@@ -347,8 +347,6 @@ async function near(
   }
 }
 
-console.log("Hello1")
-
 async function solana(
   dispatch: any,
   enqueueSnackbar: any,
@@ -365,7 +363,7 @@ async function solana(
     const transaction = await attestFromSolana(
       connection,
       SOL_BRIDGE_ADDRESS,
-      SOL_BRIDGE_ADDRESS,
+      SOL_TOKEN_BRIDGE_ADDRESS,
       solPK,
       solPK,
       "finalized" // Optional, but sets the commitment level

@@ -124,7 +124,7 @@ function Attest() {
 
   return (
     <Container maxWidth="md">
-      <HeaderText white>Message Registration</HeaderText>
+      <HeaderText white>ComplianceLink</HeaderText>
       <Alert severity="info">
         This form allows you to register a message on a new foreign chain. Messages
         must be registered before they can be transferred.
