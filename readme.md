@@ -42,8 +42,8 @@ To experience ComplianceLink yourself, visit our [Live Prototype Site](https://c
 
 Below are some images to help guide you through using ComplianceLink:
 
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-1.jpeg) 
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-2.jpeg)  
+ - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-2.jpeg) 
+ - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-1.jpeg)  
  - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-3.jpeg)
  - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-4.jpeg)
  - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-5.jpeg)
