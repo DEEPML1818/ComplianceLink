@@ -42,18 +42,18 @@ To experience ComplianceLink yourself, visit our [Live Prototype Site](https://c
 
 Below are some images to help guide you through using ComplianceLink:
 
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-2.jpeg) 
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-1.jpeg)  
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-3.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-4.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-5.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-6.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-7.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-8.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-9.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-10.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-11.jpeg)
- - Overview ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-12.jpeg)
+ - **Interface** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-2.jpeg) 
+ - **Solana Connect Wallet** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-1.jpeg)  
+ - **Wallet Connected** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-3.jpeg)
+ - **Add Address and Asset** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-4.jpeg)
+ - **WormHole Target** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-5.jpeg)
+ - **Target Chain** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-6.jpeg)
+ - **MetaMask Wallet Connect for EVM** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-7.jpeg)
+ - **Wallet Connected** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-8.jpeg)
+ - **Asset for Compliance Data Attestation** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-9.jpeg)
+ - **Token Bridge** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-10.jpeg)
+ - **Approve Transaction for Solana** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-11.jpeg)
+ - **Data Attestatin through WormHole** ![](https://github.com/DEEPML1818/ComplianceLink/blob/main/CL-ss-12.jpeg)
 
 These visuals offer a glimpse into the user experience, with intuitive interfaces for compliance management and cross-chain operations.
 
