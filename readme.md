@@ -73,6 +73,8 @@ To explore the ComplianceLink prototype:
    ```bash
    git clone https://github.com/DEEPML1818/ComplianceLink.git
    cd ComplianceLink
+   nvm install 16.20.0 && nvm use 16.20.0
+   npm ci or npm i 
 3. **Set Environment Variables:** Add Circle API, Wormhole SDK, and other required keys in a `.env` file.
    ```bash
    CIRCLE_API_KEY=<Your_Circle_API_Key>
@@ -142,8 +144,7 @@ DCE operates on a modular architecture comprising the following main components:
 
 2. **Install Dependencies**
    ```bash
-   nvm install 16.20.0 && nvm use 16.20.0
-   npm ci or npm i 
+   npm install 
 
 3. **Set Up Environment Variables**
    - Create a .env file in the root directory with the following keys :
