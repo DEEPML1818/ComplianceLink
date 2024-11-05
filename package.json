@@ -69,8 +69,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "node --max-old-space-size=4096 node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node --max-old-space-size=4096 node_modules/react-scripts/bin/react-scripts.js build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
